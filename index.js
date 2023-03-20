@@ -7,3 +7,7 @@ let quotesArray = ['NAPS is by far the most significant cultural force of the de
 'NAPS is doing the hard work of helping people get the rest they need. — U.S. News'];
 
 let randomNumber = Math.floor(Math.random () * quotesArray.length);
+
+document.getElementById('press-quote').textContent =  '“' + quotesArray[randomNumber].split('—')[0] + '”' + '—' +  quotesArray[randomNumber].split('—')[1];
+
+//console.log(quotesArray[randomNumber].split('—')[0]);
